@@ -1,23 +1,14 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - Prints the size of many var types
- *
- * Return:0
- *
+ * main - prints exactly "and that piece of art is useful"
+ * - Dora Korpar, 2015-10-19",
+ * followed by a new line, to the standard error.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-  char c;
-  int i;
-  long li;
-  long long lli;
-  float f;
-
-  printf("Size of a char: %d byte(s)\n", sizeof(c));
-  printf("Size of an int: %d byte(s)\n", sizeof(i));
-  printf("Size of a long int: %d byte(s)\n", sizeof(li));
-  printf("Size of a long long int: %d byte(s)\n", sizeof(lli));
-  printf("Size of a float: %d byte(s)\n", sizeof(f));
-  return (0);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
