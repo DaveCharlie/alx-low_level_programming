@@ -1,0 +1,2 @@
+#Contents 
+C Pointers assignment 
